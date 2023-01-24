@@ -1,9 +1,11 @@
-const BuildPresentationHead = (props) => {
+import { useState } from "react";
+
+const BuildFutureWeather = (props) => {
   if (!props.data) {
     return null;
   }
 
-  const list = props.data.forecast.forecastday.map((element) => {
+  const list = props.data.forecast.forecastday.map((element, index) => {
     return (
       <>
         <div className="card">
@@ -23,4 +25,4 @@ const BuildPresentationHead = (props) => {
   );
 };
 
-export default BuildPresentationHead;
+export default BuildFutureWeather;

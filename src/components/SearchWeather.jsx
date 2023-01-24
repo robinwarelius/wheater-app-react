@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import Api from "./Api";
+import WebApi from "../services/WebApi";
 import BuildCurrentWeather from "./BuildCurrentWeather";
 import BuildFutureWeather from "./BuildFutureWeather";
 import img from "../images/search.png";
@@ -32,7 +32,7 @@ const Search = () => {
   return (
     <>
       {bool ? (
-        <Api url={url} data={setData} error={setError} bool={setBool} />
+        <WebApi url={url} data={setData} error={setError} bool={setBool} />
       ) : (
         ""
       )}

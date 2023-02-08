@@ -55,8 +55,9 @@ const Search = () => {
         <section id="middle-section">
           <BuildCurrentWeather data={data} />
           <h1>
-            <span>8-dygnsprognos</span>
+            <span>3-dygnsprognos</span>
           </h1>
+
           <div className="futureDiv">
             <BuildFutureWeather data={data} />
           </div>
